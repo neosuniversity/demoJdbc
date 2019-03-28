@@ -6,7 +6,7 @@ import com.neosuniversity.dominio.Proveedor;
 
 public class DemoDAO {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws  Exception {
 
         ProveedorDao dao = new ProveedorDaoImpl();
 
