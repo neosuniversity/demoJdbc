@@ -37,10 +37,18 @@ public class DemoPreparedStatement {
                 );
             }
 
-
-
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+
+           try {
+               if (conn != null) {
+                   conn.close();
+               }
+           }catch (SQLException e) {
+               e.printStackTrace();
+           }
+
         }
 
 
